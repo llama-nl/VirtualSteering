@@ -1,0 +1,54 @@
+[gd_scene load_steps=4 format=3 uid="uid://bx6wk28cn1u8h"]
+
+[ext_resource type="PackedScene" uid="uid://cbquwo8hgmk3u" path="res://addons/VirtualSteering/virtual_steering.scn" id="1_v0l8b"]
+[ext_resource type="Texture2D" uid="uid://dlr72o00y6lb6" path="res://icon.svg" id="3_wp4xf"]
+
+[sub_resource type="GDScript" id="GDScript_brvut"]
+script/source = "extends TextureRect
+
+@onready var virtual_steering : VirtualSteering = $\"../VirtualSteering\"
+
+func _process(_delta: float) -> void:
+	rotation = -virtual_steering.get_output()
+	#rotation_degrees = virtual_steering.get_output_deg() #output in degree
+"
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="icon" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(64, 64)
+texture = ExtResource("3_wp4xf")
+script = SubResource("GDScript_brvut")
+
+[node name="VirtualSteering" parent="." instance=ExtResource("1_v0l8b")]
+layout_mode = 1
+anchors_preset = 2
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 0.0
+anchor_bottom = 1.0
+offset_left = 0.0
+offset_top = -230.0
+offset_right = 230.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 0
