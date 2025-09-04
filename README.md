@@ -4,8 +4,8 @@
 
 A simple and customizable virtual steering wheel plugin for mobile car games and other vehicle-based projects in Godot 4
 
-**Features**
-Intuitive Touch Control: The steering wheel is controlled by a simple drag motion.
+### Features
+**Intuitive Touch Control**: The steering wheel is controlled by a simple drag motion.
 
 **Customizable Sensitivity**: Adjust the `wheel_sensitivity` to fine-tune the feel of the steering.
 
@@ -23,14 +23,14 @@ Download the from assets library.
 **Important**: For the plugin to work correctly, you must enable emulate touch from mouse in Project Settings under input_devices -> pointing.
 
 ### How to Use
-Instancate the virtual_steering.scn scene from `addons/VirtualSteering`,
+Instancate the `virtual_steering.scn` scene from `addons/VirtualSteering`.
 
-adjust the size if needed
+adjust the size, texture, etc if needed
 
 Access the output from another script (e.g., your car's main script) to control your vehicle's steering.
 
 ### Example
-Here's an example of how you might use the get_output() function in your car's script:
+Here's an example of how you might use the `get_output()` function in your car's script:
 ```gdscript
 extends VehicleBody3D
 
@@ -53,7 +53,7 @@ You can customize the steering wheel's behavior by adjusting the following prope
 
 **wheel_sensitivity**: A factor that determines how much the wheel rotates in response to a drag gesture. (Default: 12, Range: 1 to 20)
 
-**wheel_return_speed**: A speed factor for how quickly the wheel returns to its center position when released. A smaller value means a faster return. (Default: 0.2, Range: 0.1 to 1)
+**wheel_return_speed**: A speed factor for how quickly the wheel returns to its normal rotation when released. A smaller value means a faster return. (Default: 0.2, Range: 0.1 to 1)
 
 ### Contributing
 Feel free to open an issue or submit a pull request if you have any suggestions or improvements.
