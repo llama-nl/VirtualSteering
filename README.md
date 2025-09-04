@@ -1,4 +1,7 @@
 ## Virtual Steering Plugin for Godot
+
+![alt text]([http://url/to/img.png](https://s1.ezgif.com/tmp/ezgif-1444f96a746d3c.gif))
+
 A simple and customizable virtual steering wheel plugin for mobile car games and other vehicle-based projects in Godot 4
 
 **Features**
