@@ -1,6 +1,6 @@
 ## Virtual Steering Plugin for Godot
 
-![hippo](https://ibb.co.com/bgtRDQjH)
+![hippo](https://raw.githubusercontent.com/llama-nl/VirtualSteering/refs/heads/main/ezgif-1444f96a746d3c.gif)
 
 A simple and customizable virtual steering wheel plugin for mobile car games and other vehicle-based projects in Godot 4
 
