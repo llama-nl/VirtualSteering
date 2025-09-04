@@ -44,13 +44,13 @@ func _physics_process(delta):
 ### Properties
 You can customize the steering wheel's behavior by adjusting the following properties in the Inspector:
 
-rotation_limit: The maximum rotation limit in degrees. The wheel will not rotate beyond this value in either direction. (Default: 180)
+**rotation_limit**: The maximum rotation limit in degrees. The wheel will not rotate beyond this value in either direction. (Default: 180)
 
-output_limit: The maximum rotation in degrees that will be returned as an output. This value is used to scale the output to the -1 to 1 range. (Default: 60)
+**output_limit**: The maximum rotation in degrees that will be returned as an output. This value is used to scale the output to the -1 to 1 range. (Default: 60)
 
-wheel_sensitivity: A factor that determines how much the wheel rotates in response to a drag gesture. (Default: 12, Range: 1 to 20)
+**wheel_sensitivity**: A factor that determines how much the wheel rotates in response to a drag gesture. (Default: 12, Range: 1 to 20)
 
-wheel_return_speed: A speed factor for how quickly the wheel returns to its center position when released. A smaller value means a faster return. (Default: 0.2, Range: 0.1 to 1)
+**wheel_return_speed**: A speed factor for how quickly the wheel returns to its center position when released. A smaller value means a faster return. (Default: 0.2, Range: 0.1 to 1)
 
-Contributing
+### Contributing
 Feel free to open an issue or submit a pull request if you have any suggestions or improvements.
