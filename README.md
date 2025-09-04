@@ -28,7 +28,7 @@ Access the output from another script (e.g., your car's main script) to control 
 
 ### Example
 Here's an example of how you might use the get_output() function in your car's script:
-```
+```gdscript
 extends VehicleBody3D
 
 @onready var virtual_steering = $"[path_to_your_VirtualSteering_node]"
