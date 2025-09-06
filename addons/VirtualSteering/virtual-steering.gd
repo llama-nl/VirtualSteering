@@ -53,7 +53,7 @@ func _physics_process(delta: float) -> void:
 	pivot_offset = size / 2
 	
 	if is_pressed:
-		rotation_degrees = target_rotation
+		rotation_degrees = lerpf(rotation_degrees, target_rotation, delta / 0.1
 		rotation_degrees = clampf(rotation_degrees, -rotation_limit, rotation_limit)
 	else:
 		rotation_degrees = lerpf(rotation_degrees, 0.0, delta / wheel_return_speed) if abs(rotation_degrees) > 1 else 0
